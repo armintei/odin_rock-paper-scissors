@@ -3,14 +3,56 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
         <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="font-style.css">
+        <title>Rock Paper Scissors</title>
     </head>
     <body>
+        <div id="container" class="centered">
+        <h1>Rock Paper Scissors</h1>
+       <!--Figure Section-->
+        <div id="fig-container">
+            <div class="fig-box">
+                <img id="rock" src="rock.png" height="150" width="150" onclick="game(this)"> 
+            </div>
+            <div class="fig-box">
+                <img id="paper" src="paper.png" height="150" width="150" onclick="game(this)">                
+            </div>
+            <div class="fig-box">
+                <img id="scissors" src="scissors.png" height="150" width="150" onclick="game(this)">          
+           </div>
+        </div>
+        <!--Game Details. Round count and the score-->
+        <div id="game-details">     
+            <p id="round">Round 0</p>
+            <div id="score">
+                <p id="player-Score">0</p>
+                <p>:</p>
+                <p id="com-Score">0</p>
+            </div>
+        </div>
+        <!--Result text and the figure the RNG gods have chosen.-->
+        <div id="result-box">
+            <div id="result-txt">
+                <p id="result-desc">GOOD LUCK, HAVE FUN!</p>
+            </div>
+            <div id="com-fig">
+                <img id="fig-pic" src="brain.png" height="100" width="100">
+            </div>
+       </div> 
+       <div>
+           <button id="again" onclick="playAgain()">Play again</button>
+       </div>
+    </div>
+    <!--Copyright :D -->
+    <div id="foot">
+        © 
+        <a href="https://github.com/armintei" target="blank">
+            2022 armintei
+        </a>  
+    </div>
         <script src="gameFunc.js" defer></script>
-        
-        
     </body>
 </html>

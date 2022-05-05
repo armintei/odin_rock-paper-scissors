@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'galindo';
+    src: url('galindo/Galindo-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'galindo';
+    color: #2a363b;
+}
+
+#container h1 {
+    font-size: 36px;
+}
+
+#again {
+    font-family: 'galindo';
+    font-size: 18px;
+}
+
+#foot {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#foot a {
+    font-family: 'galindo';
+    color: #2a363b;
+    text-decoration: none;
+    transition: 0.5s;
+}
+

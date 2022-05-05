@@ -1,12 +1,121 @@
 body {
     height: 100%;
-    background-color: bisque;
+    background-color: #FECEA8;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.container {
+.winScreen {
+    background-color: #99b898;
+}
+
+
+.loseScreen {
+    background-color: #e84a5f;
+}
+
+#container {
     display: flex;
     flex-direction: column;
+    height: 850px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#fig-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 650px;
+    padding: 10px;
+    border: 4px solid #2a363b;
+    border-radius: 30px;
+}
+
+.centered {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -10%)
+}
+
+.fig-box {
+    display: flex;
+    flex-direction: column;
+    transform: scale(1.0);
+    transition: 0.3s;
+}
+
+.fig-box:hover{
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+#game-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid #2a363b;
+    border-radius: 15px;
+    height: 120px;
+    width:250px;
+    font-size: 28px;
+}
+
+#score {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 120px;
+    padding-bottom: 20px;
+}
+
+#result-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid #2a363b;
+    border-radius: 25px;
+    width: 650px;
+}
+
+#again {
+    background-color: #FECEA8;
+    color: #2a363b;
+    border-color: #2a363b;
+    height: 60px;
+    width: 120px;
+    transition: 0.5s;
+}
+
+#again:hover{
+    background-color: #ff847c;
+    transition: 0.5s;
+}
+
+#foot {
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    height: 35px;
+    padding-top: 10px;
+    border-top: 2px solid #2a363b;
+    text-align: center;  
+}
+
+#foot a:hover {
+    color: #ff847c;
+    transition: 0.3s;
+}
+/*To shrink down everything to the current window size*/
+
+@media (max-width:600px) {
+   
 }
